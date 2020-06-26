@@ -15,12 +15,11 @@ public class Teste01 {
 		String p1, p2;
 		
 		//Declaração do Scanner para input do usuário
-		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
-		System.out.print("Digite a palavra desejada: ");
+		System.out.print("Digite a palavra/string desejada: ");
 		
 		//Foram utilizadar as funções TRIM para remover espaços antes, TOUPPERCASE para colocar tudo em maiúsculo e REPLACEALL para remover os espaços entre as strings
-		p1 = in.nextLine().trim().toUpperCase().replaceAll(" ", "");
+		p1 = in.nextLine().trim().toUpperCase().replaceAll(" ", "").replaceAll("-","").replace(",", "").replaceAll("!","").replaceAll(":", "");
 		
 		//p2 irá receber o valor de p1 para que mais na frente vire outro vetor
 		p2 = p1;
