@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 //Desenvolvido por Caio Marinho Coelho
-public class Teste01 {
+public class palindroV1 {
 
 	public static void main(String[] args) {
 		
